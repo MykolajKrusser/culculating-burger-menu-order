@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Burger menu</title>
+    <script src="script.js" defer></script>
+</head>
+<body>
+<h1>Burger menu</h1>
+<label>
+    <input type="checkbox" onchange="getResult()" checked disabled data-cost="10" data-cal="75" class="menu">
+    Bun
+</label>
+<hr>
+<h2>Filling</h2>
+<label>
+    <input type="checkbox" onchange="getResult()" checked data-cost="20" data-cal="200" class="menu">
+    Cutlet
+</label>
+<br>
+<label>
+    <input type="checkbox" onchange="getResult()" data-cost="12" data-cal="100" class="menu">
+    Cheese
+</label>
+<br>
+<label>
+    <input type="checkbox" onchange="getResult()" data-cost="8" data-cal="50" class="menu">
+    Salad
+</label>
+<br>
+<label>
+    <input type="checkbox" onchange="getResult()" data-cost="2" data-cal="20" class="menu">
+    Pickled cucumber
+</label>
+<br>
+<label>
+    <input type="checkbox" onchange="getResult()" data-cost="4" data-cal="67" class="menu">
+    Tomato
+</label>
+<hr>
+<h2>Sauce</h2>
+<label>
+    <input type="checkbox" onchange="getResult()" checked data-cost="5" data-cal="10" class="menu">
+    Tomato ketchup
+</label>
+<br>
+<label>
+    <input type="checkbox" onchange="getResult()" data-cost="5" data-cal="5" class="menu">
+    Mustard
+</label>
+<br>
+<label>
+    <input type="checkbox" onchange="getResult()" data-cost="5" data-cal="12" class="menu">
+    Mayonnaise
+</label>
+<br>
+<label>
+    <input type="checkbox" onchange="getResult()" data-cost="10" data-cal="35" class="menu">
+    Sichuan Sauce
+</label>
+<hr>
+<h3>Total cost:</h3>
+<p>Caloric value: <span id="cal"></span><br>
+    Price: <span id="cost"></span></p>
+<button id="result">Bill</button>
+
+</body>
+</html>
