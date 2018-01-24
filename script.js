@@ -1,7 +1,7 @@
 document.getElementById("result").onclick = getResult; //access to div with id result to show the sum
 getResult(); //call function
 function getResult(){
-    var menu = document.getElementsByClassName("menu"); // make a colection of all checkboxes
+    var menu = document.getElementsByClassName("menu"); // make a collection of all checkboxes
     var cost = 0;
     var cal = 0;
     for (var i = 0; i < menu.length; i++){ //loop every filled checkbox
